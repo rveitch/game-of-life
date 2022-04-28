@@ -6,9 +6,8 @@
   "type": "module",
   "main": "simulation.js",
   "scripts": {
-    "test": "env NODE_ENV=test mocha ./test --recursive",
-    "start": "node --inspect=9231 index.js",
-    "local": "npm run start",
+    "start": "node --inspect=9231 simulation.js",
+    "simulation": "npm run start",
     "prettier:check": "./node_modules/prettier/bin-prettier.js --check .",
     "prettier:fix": "./node_modules/prettier/bin-prettier.js --write ."
   },
