@@ -29,5 +29,8 @@
     "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-node": "^11.1.0",
     "prettier": "^2.6.1"
+  },
+  "dependencies": {
+    "table": "^6.8.0"
   }
 }
