@@ -1,7 +1,7 @@
 import { firstGeneration } from './lib/data/grids.js';
 import { EMPTY, NEWBORN, ADULT, SENIOR } from './lib/config/constants.js';
 import { TARGET_GENERATION, LOG_ALL_GENERATIONS } from './lib/config/config.js';
-import { printGeneration, validateGrid } from './lib/utils/utils.js';
+import { printGeneration, validateGrid, evolveNextGeneration } from './lib/utils/utils.js';
 
 /**
  * Executes the Game of Life Simulation
@@ -15,6 +15,7 @@ function runSimulation() {
 
   do {
     currentGeneration += 1;
+    currentGrid = evolveNextGeneration(currentGrid, currentGeneration);
   } while (currentGeneration < TARGET_GENERATION);
 }
 
