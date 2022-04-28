@@ -5,6 +5,7 @@ import { printGeneration, validateGrid, evolveNextGeneration } from './lib/utils
 
 /**
  * Executes the Game of Life Simulation
+ * @returns {Array<number>}
  */
 function runSimulation() {
   validateGrid(firstGeneration); // Ensure we are starting with a valid grid
@@ -17,6 +18,10 @@ function runSimulation() {
     currentGeneration += 1;
     currentGrid = evolveNextGeneration(currentGrid, currentGeneration);
   } while (currentGeneration < TARGET_GENERATION);
+
+  console.log('\nEND OF SIMULATION\n');
+
+  return currentGrid;
 }
 
 runSimulation();
