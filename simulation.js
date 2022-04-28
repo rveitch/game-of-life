@@ -1,6 +1,5 @@
 import { firstGeneration } from './lib/data/grids.js';
-import { EMPTY, NEWBORN, ADULT, SENIOR } from './lib/config/constants.js';
-import { TARGET_GENERATION, LOG_ALL_GENERATIONS } from './lib/config/config.js';
+import { TARGET_GENERATION } from './lib/config/config.js';
 import { printGeneration, validateGrid, evolveNextGeneration } from './lib/utils/utils.js';
 
 /**
