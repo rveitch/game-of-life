@@ -12,3 +12,5 @@
 
 ## Running the Simulation
 - Run and of `npm run start`, `npm run simulation`, or `node simulation.js` in your terminal to execute the simulation.
+
+![image](https://user-images.githubusercontent.com/12876929/165845152-211da337-47f5-4feb-8a37-14dcc9fe8fc0.png)
